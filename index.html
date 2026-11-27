@@ -75,7 +75,7 @@
   <input id="input" placeholder="اكتب رسالتك..." onkeydown="if(event.key==='Enter')sendMessage()">
   <button id="send" onclick="sendMessage()">➤</button>
 </footer><script>
-const MODEL = "gemini-3.8-flash"; // لو حصل خطأ في الموديل، غيّر الاسم ده
+const MODEL = "gemini-3.5-flash"; // لو حصل خطأ في الموديل، غيّر الاسم ده
 const STORAGE_KEY = "ozil_chatbot_history";
 let apiKey = localStorage.getItem("ozil_gemini_key");
 let history = [];
