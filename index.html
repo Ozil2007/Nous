@@ -163,7 +163,7 @@ async function askGemini(text) {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        system_instruction: { parts: [{ text: "أنت مساعد ذكي اسمه شات بوت أوزيل. رد بالعربي المصري البسيط، وخليك مفيد ومختصر إلا لو طلب منك تفاصيل." }] },
+        system_instruction: { parts: [{ text: "You are Nous, a personal AI assistant. Reply in the same language the user writes in, Arabic or English. Answer briefly by default, and give a detailed answer only when the user asks for details. Answer any question the user asks, whatever the topic.." }] },
         contents: contents
       })
     }
